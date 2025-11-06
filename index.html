@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezas do Nordeste</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #faf3e0;
+            color: #4b3b2b;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f2d0a7;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #704214;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #4b3b2b;
+        }
+
+        nav {
+            background-color: #f7e7ce;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #704214;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 15%;
+        }
+
+        section h2 {
+            color: #704214;
+            border-bottom: 2px solid #f2d0a7;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fffaf2;
+            border: 1px solid #f2d0a7;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #f2d0a7;
+            text-align: center;
+            padding: 20px;
+            color: #4b3b2b;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 5%;
+            }
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Belezas do Nordeste</h1>
+        <p>Um mergulho na cultura, sabores e histórias da região mais calorosa do Brasil.</p>
+    </header>
+
+    <nav>
+        <a href="#comidas">Comidas Típicas</a>
+        <a href="#lendas">Lendas e Tradições</a>
+        <a href="#cultura">Cultura e Cores</a>
+    </nav>
+
+    <section id="comidas">
+        <h2>🍛 Comidas Típicas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Acaraje_dende.jpg" alt="Acarajé">
+                <h3>Acarajé</h3>
+                <p>Bolinho de feijão-fradinho frito no azeite de dendê, servido com vatapá, camarão e pimenta. Símbolo da Bahia.</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Buchada_de_bode_02.jpg" alt="Buchada de bode">
+                <h3>Buchada de Bode</h3>
+                <p>Prato típico do sertão, feito com vísceras do bode temperadas e cozidas. Uma iguaria nordestina!</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Carne_de_sol_com_mandioca.jpg" alt="Carne de sol com macaxeira">
+                <h3>Carne de Sol com Macaxeira</h3>
+                <p>Clássico prato nordestino: carne de sol acompanhada de macaxeira frita e manteiga de garrafa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lendas">
+        <h2>🌙 Lendas e Tradições</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Mula-sem-cabe%C3%A7a_2014.jpg" alt="Mula sem cabeça">
+                <h3>Mula sem Cabeça</h3>
+                <p>Diz-se que uma mulher amaldiçoada por se apaixonar por um padre se transforma em uma mula de fogo sem cabeça.</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Caboclo_d%27agua_mito_brasileiro.jpg" alt="Caboclo d'água">
+                <h3>Caboclo d’Água</h3>
+                <p>Protetor dos rios e pescadores. Dizem que aparece para alertar sobre perigos e tempestades nas águas.</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Comadre_Fulozinha_figurino.jpg" alt="Comadre Fulozinha">
+                <h3>Comadre Fulozinha</h3>
+                <p>Guardadora das matas, de cabelos longos e pretos. Castiga quem maltrata os animais e destrói a natureza.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cultura">
+        <h2>🎨 Cultura e Cores</h2>
+        <p>O Nordeste é conhecido por sua alegria, hospitalidade e expressões culturais únicas. O forró embala as festas juninas, o frevo colore o carnaval de Pernambuco, e o maracatu faz ecoar tambores ancestrais.  
+        O artesanato em barro do Cariri, as rendas de bilro do Ceará e o cordel pendurado nas feiras contam histórias de um povo criativo e resistente.</p>
+    </section>
+
+    <footer>
+        <p>🌴 Feito com amor por quem ama o Nordeste 💛</p>
+    </footer>
+
+</body>
+</html>
