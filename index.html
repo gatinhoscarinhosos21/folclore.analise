@@ -1,27 +1,30 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belezas do Nordeste</title>
+    <title>Encantos do Nordeste</title>
     <style>
+        /* --- ESTILO GERAL --- */
         body {
             font-family: "Poppins", sans-serif;
-            background-color: #faf3e0;
+            background-color: #faf5ef;
             color: #4b3b2b;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #f2d0a7;
+            background: linear-gradient(135deg, #f2d0a7, #f7e7ce);
             text-align: center;
-            padding: 50px 20px;
+            padding: 80px 20px;
         }
 
         header h1 {
             font-size: 3em;
             color: #704214;
+            margin-bottom: 10px;
         }
 
         header p {
@@ -32,30 +35,35 @@
         nav {
             background-color: #f7e7ce;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
         nav a {
             color: #704214;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #a06b32;
         }
 
         section {
-            padding: 50px 15%;
+            padding: 60px 12%;
         }
 
         section h2 {
             color: #704214;
-            border-bottom: 2px solid #f2d0a7;
-            padding-bottom: 10px;
+            font-size: 2em;
+            border-bottom: 3px solid #f2d0a7;
+            display: inline-block;
+            margin-bottom: 30px;
         }
 
+        /* --- GRADE DE CARTÕES --- */
         .grid {
             display: flex;
             flex-wrap: wrap;
@@ -64,32 +72,48 @@
         }
 
         .card {
-            background-color: #fffaf2;
-            border: 1px solid #f2d0a7;
+            background-color: #fffdf9;
             border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            width: 280px;
-            text-align: center;
-            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
 
         .card img {
             width: 100%;
-            border-radius: 10px;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
         }
 
+        .card h3 {
+            color: #704214;
+            margin: 15px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            margin: 0 15px 20px 15px;
+            font-size: 0.95em;
+        }
+
+        /* --- RODAPÉ --- */
         footer {
             background-color: #f2d0a7;
             text-align: center;
             padding: 20px;
             color: #4b3b2b;
+            font-weight: bold;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 800px) {
             section {
-                padding: 30px 5%;
+                padding: 40px 5%;
             }
             .grid {
                 flex-direction: column;
@@ -101,66 +125,115 @@
 <body>
 
     <header>
-        <h1>Belezas do Nordeste</h1>
-        <p>Um mergulho na cultura, sabores e histórias da região mais calorosa do Brasil.</p>
+        <h1>Encantos do Nordeste</h1>
+        <p>Uma viagem pelas cores, sabores e tradições da região mais acolhedora do Brasil.</p>
     </header>
 
     <nav>
         <a href="#comidas">Comidas Típicas</a>
-        <a href="#lendas">Lendas e Tradições</a>
-        <a href="#cultura">Cultura e Cores</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#lendas">Lendas</a>
+        <a href="#lugares">Lugares</a>
     </nav>
 
+    <!-- COMIDAS -->
     <section id="comidas">
         <h2>🍛 Comidas Típicas</h2>
         <div class="grid">
             <div class="card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Acaraje_dende.jpg" alt="Acarajé">
                 <h3>Acarajé</h3>
-                <p>Bolinho de feijão-fradinho frito no azeite de dendê, servido com vatapá, camarão e pimenta. Símbolo da Bahia.</p>
+                <p>Bolinho de feijão-fradinho frito no dendê, recheado com vatapá, camarão e pimenta. Tradição baiana e herança africana.</p>
             </div>
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Buchada_de_bode_02.jpg" alt="Buchada de bode">
-                <h3>Buchada de Bode</h3>
-                <p>Prato típico do sertão, feito com vísceras do bode temperadas e cozidas. Uma iguaria nordestina!</p>
-            </div>
+
             <div class="card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Carne_de_sol_com_mandioca.jpg" alt="Carne de sol com macaxeira">
                 <h3>Carne de Sol com Macaxeira</h3>
-                <p>Clássico prato nordestino: carne de sol acompanhada de macaxeira frita e manteiga de garrafa.</p>
+                <p>Carne salgada e curada ao sol, servida com macaxeira frita e manteiga de garrafa — sabor de todo o sertão.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Bai%C3%A3o_de_dois_com_queijo_coalho.jpg" alt="Baião de Dois">
+                <h3>Baião de Dois</h3>
+                <p>Feijão-verde, arroz, queijo coalho e temperos formam esse prato típico do interior nordestino. Simples e delicioso.</p>
             </div>
         </div>
     </section>
 
-    <section id="lendas">
-        <h2>🌙 Lendas e Tradições</h2>
+    <!-- CULTURA -->
+    <section id="cultura">
+        <h2>🎭 Cultura e Tradições</h2>
         <div class="grid">
             <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Mula-sem-cabe%C3%A7a_2014.jpg" alt="Mula sem cabeça">
-                <h3>Mula sem Cabeça</h3>
-                <p>Diz-se que uma mulher amaldiçoada por se apaixonar por um padre se transforma em uma mula de fogo sem cabeça.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Festa_Junina_em_Pernambuco.jpg" alt="Festa Junina">
+                <h3>Festas Juninas</h3>
+                <p>Celebradas com forró, fogueira, comidas típicas e alegria. Um dos maiores símbolos da cultura popular nordestina.</p>
             </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Frevo_dancers_Recife.jpg" alt="Frevo em Recife">
+                <h3>Frevo</h3>
+                <p>Ritmo vibrante e colorido, nascido em Pernambuco. É música, dança e carnaval — tudo junto num só movimento.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Artesanato_de_barro_de_Caruaru.jpg" alt="Artesanato nordestino">
+                <h3>Artesanato</h3>
+                <p>O barro, a renda e o couro são transformados em arte por mãos habilidosas, mantendo viva a identidade do Nordeste.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LENDAS -->
+    <section id="lendas">
+        <h2>🌙 Lendas Nordestinas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Mula-sem-cabe%C3%A7a_2014.jpg" alt="Mula sem Cabeça">
+                <h3>Mula sem Cabeça</h3>
+                <p>Conta a lenda que uma mulher amaldiçoada se transforma numa mula de fogo sem cabeça, que cavalga nas noites de lua cheia.</p>
+            </div>
+
             <div class="card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Caboclo_d%27agua_mito_brasileiro.jpg" alt="Caboclo d'água">
                 <h3>Caboclo d’Água</h3>
-                <p>Protetor dos rios e pescadores. Dizem que aparece para alertar sobre perigos e tempestades nas águas.</p>
+                <p>Guardião dos rios, protege os pescadores e avisa sobre tempestades. Figura misteriosa das margens do São Francisco.</p>
             </div>
+
             <div class="card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Comadre_Fulozinha_figurino.jpg" alt="Comadre Fulozinha">
                 <h3>Comadre Fulozinha</h3>
-                <p>Guardadora das matas, de cabelos longos e pretos. Castiga quem maltrata os animais e destrói a natureza.</p>
+                <p>Protetora das matas e dos animais. Brinca com os viajantes e castiga quem desrespeita a natureza.</p>
             </div>
         </div>
     </section>
 
-    <section id="cultura">
-        <h2>🎨 Cultura e Cores</h2>
-        <p>O Nordeste é conhecido por sua alegria, hospitalidade e expressões culturais únicas. O forró embala as festas juninas, o frevo colore o carnaval de Pernambuco, e o maracatu faz ecoar tambores ancestrais.  
-        O artesanato em barro do Cariri, as rendas de bilro do Ceará e o cordel pendurado nas feiras contam histórias de um povo criativo e resistente.</p>
+    <!-- LUGARES -->
+    <section id="lugares">
+        <h2>🌅 Lugares Incríveis</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Jericoacoara_Cear%C3%A1.jpg" alt="Jericoacoara">
+                <h3>Jericoacoara (CE)</h3>
+                <p>Dunas douradas, mar calmo e pores do sol inesquecíveis. Um dos destinos mais paradisíacos do Brasil.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lencois_Maranhenses_2019.jpg" alt="Lençóis Maranhenses">
+                <h3>Lençóis Maranhenses (MA)</h3>
+                <p>Um deserto de lagoas cristalinas. As dunas brancas e a água azul formam uma paisagem única no mundo.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Pelourinho_Salvador_Bahia.jpg" alt="Pelourinho">
+                <h3>Pelourinho (BA)</h3>
+                <p>Centro histórico de Salvador, com casarões coloridos, música nas ruas e o berço do axé e da capoeira.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>🌴 Feito com amor por quem ama o Nordeste 💛</p>
+        <p>🌴 Criado com carinho para celebrar a alma do Nordeste Brasileiro 💛</p>
     </footer>
 
 </body>
