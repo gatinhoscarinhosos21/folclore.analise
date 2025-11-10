@@ -1,33 +1,277 @@
- <!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Encantos do Nordeste</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordeste do Brasil</title>
+    <style>
+        /* ======= ESTILO GERAL ======= */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffaf3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ======= CABEÇALHO ======= */
+        header {
+            background: linear-gradient(135deg, #ffd6a5, #fcd5ce);
+            color: #3e2723;
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeSlide 1.2s ease forwards;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* ======= MENU DE NAVEGAÇÃO ======= */
+        nav {
+            background-color: #ffedd8;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeSlide 1.5s ease forwards;
+        }
+
+        nav a {
+            color: #795548;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d84315;
+        }
+
+        /* ======= SEÇÕES ======= */
+        section {
+            padding: 60px 10%;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* atraso gradual para cada seção */
+        #lendas { animation-delay: 0.3s; }
+        #comidas { animation-delay: 0.6s; }
+        #paisagens { animation-delay: 0.9s; }
+        #cultura { animation-delay: 1.2s; }
+
+        section h2 {
+            color: #bf360c;
+            font-size: 2em;
+            margin-bottom: 30px;
+            border-left: 8px solid #ffb74d;
+            padding-left: 15px;
+        }
+
+        article {
+            background-color: #fff3e0;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 35px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeSlide 1s ease forwards;
+        }
+
+        article:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        article h3 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            margin: 15px 0;
+            display: block;
+        }
+
+        /* ======= RODAPÉ ======= */
+        footer {
+            background: linear-gradient(135deg, #ffd6a5, #fcd5ce);
+            text-align: center;
+            padding: 30px;
+            color: #4e342e;
+            margin-top: 40px;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* ======= ANIMAÇÕES ======= */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ======= RESPONSIVIDADE ======= */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
 </head>
 <body>
-<header>
-  <h1>Encantos do Nordeste</h1>
-  <p>O Nordeste do Brasil é conhecido por sua alegria, cores vibrantes e uma cultura que mistura tradição e modernidade. Explore as páginas abaixo para descobrir seus sabores, histórias e paisagens únicas.</p>
-</header>
 
-<nav>
-  <a href="comidas.html">Comidas Típicas</a>
-  <a href="lugares.html">Lugares</a>
-  <a href="cultura.html">Cultura</a>
-  <a href="lendas.html">Lendas</a>
-</nav>
+    <header>
+        <h1>Nordeste do Brasil</h1>
+        <p>Terra de sol, sabores, lendas e belezas sem igual 🌞</p>
+    </header>
 
-<section>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lencois_Maranhenses_2019.jpg" alt="Lençóis Maranhenses" class="banner">
-  <h2>Bem-vindo ao Nordeste</h2>
-  <p>Com nove estados banhados pelo Atlântico, o Nordeste é berço de manifestações culturais, culinária marcante e paisagens inesquecíveis — do sertão às praias paradisíacas.</p>
-  <p>Explore o melhor dessa região apaixonante clicando nos temas acima.</p>
-</section>
+    <nav>
+        <a href="#lendas">Lendas</a>
+        <a href="#comidas">Comidas</a>
+        <a href="#paisagens">Paisagens</a>
+        <a href="#cultura">Cultura</a>
+    </nav>
 
-<footer>
-  <p>🌴 Site criado com amor para celebrar o Nordeste Brasileiro 💛</p>
-</footer>
+    <!-- ===== LENDAS ===== -->
+    <section id="lendas">
+        <h2>🌙 Lendas do Nordeste</h2>
+
+        <article>
+            <h3>A Mula sem Cabeça</h3>
+            <p>Uma das mais conhecidas lendas nordestinas. Diz-se que é o castigo dado a uma mulher que se envolveu com um padre. À meia-noite, ela se transforma em uma mula sem cabeça, soltando fogo pelas narinas e galopando pelas estradas.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Mula_sem_cabeca.jpg" alt="Mula sem Cabeça">
+        </article>
+
+        <article>
+            <h3>O Cabeça de Cuia</h3>
+            <p>Lenda do Piauí que conta a história de Crispim, um pescador amaldiçoado a viver nas águas do Rio Parnaíba, transformado em um monstro com uma enorme cabeça, condenado até que se redima devorando sete Marias.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Cabeca_de_cuia.jpg" alt="Cabeça de Cuia">
+        </article>
+
+        <article>
+            <h3>A Comadre Fulozinha</h3>
+            <p>Protetora das matas e dos animais, aparece como uma jovem de cabelos negros e longos. Ela pune os caçadores que desrespeitam a natureza, mas protege os que a tratam com respeito.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Comadre_Fulozinha_ilustracao.jpg" alt="Comadre Fulozinha">
+        </article>
+    </section>
+
+    <!-- ===== COMIDAS ===== -->
+    <section id="comidas">
+        <h2>🍛 Comidas Típicas</h2>
+
+        <article>
+            <h3>Acarajé</h3>
+            <p>Feito com feijão-fradinho, cebola e sal, frito no azeite de dendê e recheado com vatapá, camarão e salada. Um ícone da Bahia e da herança africana no Brasil.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Acaraj%C3%A9.jpg" alt="Acarajé baiano">
+        </article>
+
+        <article>
+            <h3>Baião de Dois</h3>
+            <p>Com arroz, feijão-de-corda, queijo coalho e carne seca, o baião de dois representa a simplicidade e o sabor nordestino. Seu nome vem da dança típica “baião”.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Baiao_de_dois_com_carne_de_sol.jpg" alt="Baião de dois">
+        </article>
+
+        <article>
+            <h3>Carne de Sol com Macaxeira</h3>
+            <p>Um dos pratos mais tradicionais do sertão. A carne é curada ao sol e servida com macaxeira e manteiga de garrafa. Simples, mas inesquecível.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Carne_de_sol_com_macaxeira.jpg" alt="Carne de sol com macaxeira">
+        </article>
+    </section>
+
+    <!-- ===== PAISAGENS ===== -->
+    <section id="paisagens">
+        <h2>🏞️ Paisagens Nordestinas</h2>
+
+        <article>
+            <h3>Lençóis Maranhenses (MA)</h3>
+            <p>Dunas e lagoas cristalinas criam um cenário único. Durante o período chuvoso, as lagoas se enchem e transformam a paisagem em um verdadeiro oásis tropical.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Lagoa_Azul_-_Len%C3%A7%C3%B3is_Maranhenses_-_Maranh%C3%A3o%2C_Brasil.jpg" alt="Lençóis Maranhenses">
+        </article>
+
+        <article>
+            <h3>Chapada Diamantina (BA)</h3>
+            <p>Montanhas, cavernas e cachoeiras fazem da Chapada um paraíso natural. O Morro do Pai Inácio oferece uma das vistas mais deslumbrantes do Brasil.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Morro_do_Pai_In%C3%A1cio_-_Chapada_Diamantina_-_Bahia.jpg" alt="Chapada Diamantina">
+        </article>
+
+        <article>
+            <h3>Jericoacoara (CE)</h3>
+            <p>Com dunas, lagoas e um pôr do sol mágico, Jeri é um refúgio de beleza e tranquilidade. Uma das praias mais encantadoras do mundo.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Jericoacoara_Brazil_2014-02-22.jpg" alt="Jericoacoara">
+        </article>
+    </section>
+
+    <!-- ===== CULTURA ===== -->
+    <section id="cultura">
+        <h2>🎶 Cultura Nordestina</h2>
+
+        <article>
+            <h3>Festas Populares</h3>
+            <p>O São João é a maior festa do Nordeste, com fogueiras, quadrilhas, comidas típicas e muito forró. O Carnaval de Olinda também é símbolo da alegria nordestina.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/S%C3%A3o_Jo%C3%A3o_de_Campina_Grande.jpg" alt="São João de Campina Grande">
+        </article>
+
+        <article>
+            <h3>Artesanato</h3>
+            <p>Rico e variado, o artesanato nordestino traz redes, rendas, cerâmicas e esculturas que representam o talento e a cultura do povo da região.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Artesanato_de_Caruaru.jpg" alt="Artesanato de Caruaru">
+        </article>
+
+        <article>
+            <h3>Música e Dança</h3>
+            <p>O forró, o baião e o xaxado fazem parte da alma nordestina. Luiz Gonzaga, o “Rei do Baião”, eternizou o som e o sentimento do sertão.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Luiz_Gonzaga_1958.jpg" alt="Luiz Gonzaga, o Rei do Baião">
+        </article>
+    </section>
+
+    <footer>
+        <p>© 2025 - Nordeste do Brasil | Feito com amor pela cultura nordestina 💛</p>
+    </footer>
+
 </body>
 </html>
