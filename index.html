@@ -9,36 +9,31 @@
         html {
             scroll-behavior: smooth;
         }
-
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #fffaf3;
+            background-color: #fff8f0;
             color: #333;
             line-height: 1.6;
         }
-
         /* ======= CABEÇALHO ======= */
         header {
-            background: linear-gradient(135deg, #ffd6a5, #fcd5ce);
-            color: #3e2723;
+            background: linear-gradient(135deg, #ff9a56, #ff6b6b);
+            color: #fff;
             text-align: center;
             padding: 60px 20px;
             animation: fadeSlide 1.2s ease forwards;
         }
-
         header h1 {
             font-size: 2.8em;
             margin-bottom: 10px;
         }
-
         header p {
             font-size: 1.2em;
         }
-
         /* ======= MENU DE NAVEGAÇÃO ======= */
         nav {
-            background-color: #ffedd8;
+            background-color: #ffd166;
             text-align: center;
             padding: 15px;
             position: sticky;
@@ -47,19 +42,16 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             animation: fadeSlide 1.5s ease forwards;
         }
-
         nav a {
-            color: #795548;
+            color: #533483;
             text-decoration: none;
             margin: 0 20px;
             font-weight: 600;
             transition: color 0.3s;
         }
-
         nav a:hover {
-            color: #d84315;
+            color: #e74c3c;
         }
-
         /* ======= SEÇÕES ======= */
         section {
             padding: 60px 10%;
@@ -67,23 +59,19 @@
             transform: translateY(40px);
             animation: fadeIn 1s ease forwards;
         }
-
-        /* atraso gradual para cada seção */
         #lendas { animation-delay: 0.3s; }
         #comidas { animation-delay: 0.6s; }
         #paisagens { animation-delay: 0.9s; }
         #cultura { animation-delay: 1.2s; }
-
         section h2 {
-            color: #bf360c;
+            color: #e74c3c;
             font-size: 2em;
             margin-bottom: 30px;
             border-left: 8px solid #ffb74d;
             padding-left: 15px;
         }
-
         article {
-            background-color: #fff3e0;
+            background-color: #fff;
             border-radius: 10px;
             padding: 25px;
             margin-bottom: 35px;
@@ -91,17 +79,14 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: fadeSlide 1s ease forwards;
         }
-
         article:hover {
             transform: scale(1.02);
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-
         article h3 {
-            color: #e65100;
+            color: #e74c3c;
             margin-top: 0;
         }
-
         img {
             width: 100%;
             max-width: 700px;
@@ -109,22 +94,19 @@
             margin: 15px 0;
             display: block;
         }
-
         /* ======= RODAPÉ ======= */
         footer {
-            background: linear-gradient(135deg, #ffd6a5, #fcd5ce);
+            background: linear-gradient(135deg, #ff9a56, #ff6b6b);
             text-align: center;
             padding: 30px;
-            color: #4e342e;
+            color: #fff;
             margin-top: 40px;
             animation: fadeIn 1.5s ease forwards;
         }
-
         footer p {
             margin: 0;
             font-weight: 600;
         }
-
         /* ======= ANIMAÇÕES ======= */
         @keyframes fadeIn {
             from {
@@ -136,7 +118,6 @@
                 transform: translateY(0);
             }
         }
-
         @keyframes fadeSlide {
             from {
                 opacity: 0;
@@ -147,7 +128,6 @@
                 transform: translateY(0);
             }
         }
-
         /* ======= RESPONSIVIDADE ======= */
         @media (max-width: 768px) {
             header h1 {
@@ -164,114 +144,94 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>Nordeste do Brasil</h1>
-        <p>Terra de sol, sabores, lendas e belezas sem igual 🌞</p>
+        <p>Terra de sol, cultura vibrante e paisagens de tirar o fôlego 🌞</p>
     </header>
-
     <nav>
         <a href="#lendas">Lendas</a>
         <a href="#comidas">Comidas</a>
         <a href="#paisagens">Paisagens</a>
         <a href="#cultura">Cultura</a>
     </nav>
-
     <!-- ===== LENDAS ===== -->
     <section id="lendas">
         <h2>🌙 Lendas do Nordeste</h2>
-
         <article>
             <h3>A Mula sem Cabeça</h3>
-            <p>Uma das mais conhecidas lendas nordestinas. Diz-se que é o castigo dado a uma mulher que se envolveu com um padre. À meia-noite, ela se transforma em uma mula sem cabeça, soltando fogo pelas narinas e galopando pelas estradas.</p>
-            <img src="https://cdn.pixabay.com/photo/2019/08/01/13/28/mula-4373302_1280.jpg" alt="Mula sem Cabeça">
+            <p>Lenda que conta a história de uma mulher amaldiçoada a se transformar em uma mula sem cabeça, soltando fogo pelas narinas. Símbolo do castigo pela traição, é uma das mais famosas do folclore brasileiro.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mula_sem_cabe%C3%A7a.jpg/800px-Mula_sem_cabe%C3%A7a.jpg" alt="Mula sem Cabeça">
         </article>
-
         <article>
             <h3>O Cabeça de Cuia</h3>
-            <p>Lenda do Piauí que conta a história de Crispim, um pescador amaldiçoado a viver nas águas do Rio Parnaíba, transformado em um monstro com uma enorme cabeça, condenado até que se redima devorando sete Marias.</p>
-            <img src="https://cdn.pixabay.com/photo/2020/01/04/20/32/folklore-4742267_1280.jpg" alt="Cabeça de Cuia">
+            <p>Monstro aquático do Piauí, com uma cabeça gigante e corpo de homem. Diz a lenda que Crispim, um pescador, foi amaldiçoado a devorar sete Marias para se libertar da maldição.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cabe%C3%A7a_de_Cuia.jpg/800px-Cabe%C3%A7a_de_Cuia.jpg" alt="Cabeça de Cuia">
         </article>
-
         <article>
             <h3>A Comadre Fulozinha</h3>
-            <p>Protetora das matas e dos animais, aparece como uma jovem de cabelos negros e longos. Ela pune os caçadores que desrespeitam a natureza, mas protege os que a tratam com respeito.</p>
-            <img src="https://cdn.pixabay.com/photo/2017/01/31/20/17/fantasy-2021805_1280.jpg" alt="Comadre Fulozinha">
+            <p>Protetora das matas e dos animais, aparece como uma jovem de cabelos longos. Pune caçadores cruéis, mas protege quem respeita a natureza, sendo símbolo da harmonia entre homem e meio ambiente.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Comadre_Fulozinha.jpg/800px-Comadre_Fulozinha.jpg" alt="Comadre Fulozinha">
         </article>
     </section>
-
     <!-- ===== COMIDAS ===== -->
     <section id="comidas">
         <h2>🍛 Comidas Típicas</h2>
-
         <article>
             <h3>Acarajé</h3>
-            <p>Feito com feijão-fradinho, cebola e sal, frito no azeite de dendê e recheado com vatapá, camarão e salada. Um ícone da Bahia e da herança africana no Brasil.</p>
-            <img src="https://cdn.pixabay.com/photo/2018/02/01/18/44/food-3128852_1280.jpg" alt="Acarajé baiano">
+            <p>Bolinho de feijão-fradinho frito no azeite de dendê, recheado com vatapá, camarão e salada. Originário da Bahia, é um símbolo da herança africana e um dos pratos mais amados do Nordeste.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Acaraj%C3%A9.jpg/800px-Acaraj%C3%A9.jpg" alt="Acarajé baiano">
         </article>
-
         <article>
             <h3>Baião de Dois</h3>
-            <p>Com arroz, feijão-de-corda, queijo coalho e carne seca, o baião de dois representa a simplicidade e o sabor nordestino. Seu nome vem da dança típica “baião”.</p>
-            <img src="https://cdn.pixabay.com/photo/2020/06/05/16/24/rice-5261303_1280.jpg" alt="Baião de dois">
+            <p>Prato típico do sertão, feito com arroz, feijão-de-corda, queijo coalho e carne seca. Seu nome vem da dança “baião”, e é um exemplo da culinária simples e saborosa da região.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bai%C3%A3o_de_dois.jpg/800px-Bai%C3%A3o_de_dois.jpg" alt="Baião de dois">
         </article>
-
         <article>
             <h3>Carne de Sol com Macaxeira</h3>
-            <p>Um dos pratos mais tradicionais do sertão. A carne é curada ao sol e servida com macaxeira e manteiga de garrafa. Simples, mas inesquecível.</p>
-            <img src="https://cdn.pixabay.com/photo/2020/02/13/18/35/meat-4854324_1280.jpg" alt="Carne de sol com macaxeira">
+            <p>Carne curada ao sol, servida com macaxeira e manteiga de garrafa. Prato tradicional do sertão, é um exemplo da culinária de subsistência, simples e cheia de sabor.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Carne_de_sol_com_macaxeira.jpg/800px-Carne_de_sol_com_macaxeira.jpg" alt="Carne de sol com macaxeira">
         </article>
     </section>
-
     <!-- ===== PAISAGENS ===== -->
     <section id="paisagens">
         <h2>🏞️ Paisagens Nordestinas</h2>
-
         <article>
             <h3>Lençóis Maranhenses (MA)</h3>
-            <p>Dunas e lagoas cristalinas criam um cenário único. Durante o período chuvoso, as lagoas se enchem e transformam a paisagem em um verdadeiro oásis tropical.</p>
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/09/18/lencois-maranhenses-1869732_1280.jpg" alt="Lençóis Maranhenses">
+            <p>Dunas brancas e lagoas cristalinas formam um dos cenários mais incríveis do mundo. Durante a estação chuvosa, as lagoas se enchem, criando um verdadeiro oásis no meio do deserto.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Len%C3%A7%C3%B3is_Maranhenses.jpg/800px-Len%C3%A7%C3%B3is_Maranhenses.jpg" alt="Lençóis Maranhenses">
         </article>
-
         <article>
             <h3>Chapada Diamantina (BA)</h3>
-            <p>Montanhas, cavernas e cachoeiras fazem da Chapada um paraíso natural. O Morro do Pai Inácio oferece uma das vistas mais deslumbrantes do Brasil.</p>
-            <img src="https://cdn.pixabay.com/photo/2018/08/25/19/36/chapada-diamantina-3630887_1280.jpg" alt="Chapada Diamantina">
+            <p>Montanhas, cachoeiras e cavernas fazem da Chapada um paraíso para aventureiros. O Morro do Pai Inácio oferece uma das vistas mais belas do Brasil, com uma paisagem de tirar o fôlego.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Chapada_Diamantina.jpg/800px-Chapada_Diamantina.jpg" alt="Chapada Diamantina">
         </article>
-
         <article>
             <h3>Jericoacoara (CE)</h3>
-            <p>Com dunas, lagoas e um pôr do sol mágico, Jeri é um refúgio de beleza e tranquilidade. Uma das praias mais encantadoras do mundo.</p>
-            <img src="https://cdn.pixabay.com/photo/2019/12/28/12/53/jericoacoara-4727455_1280.jpg" alt="Jericoacoara">
+            <p>Praia de areias brancas, dunas e lagoas paradisíacas. Conhecida como “Jeri”, é um dos destinos mais encantadores do Nordeste, com pôr do sol inesquecível.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jericoacoara.jpg/800px-Jericoacoara.jpg" alt="Jericoacoara">
         </article>
     </section>
-
     <!-- ===== CULTURA ===== -->
     <section id="cultura">
-        <h2>🎶 Cultura Nordestina</h2>
-
+        <h2> Cultura Nordestina</h2>
         <article>
             <h3>Festas Populares</h3>
-            <p>O São João é a maior festa do Nordeste, com fogueiras, quadrilhas, comidas típicas e muito forró. O Carnaval de Olinda também é símbolo da alegria nordestina.</p>
-            <img src="https://cdn.pixabay.com/photo/2019/06/25/18/16/forro-4291930_1280.jpg" alt="São João de Campina Grande">
-        </article>
-
-        <article>
+            <p>O São João é a maior festa do Nordeste, com fogueiras, quadrilhas e muito forró. O Carnaval de Olinda, com seus bonecos gigantes, também é um símbolo da alegria e criatividade nordestina.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/S%C3%A3o_Jo%C3%A3o_no_Nordeste.jpg/800px-S%C3%A3o_Jo%C3%A3o_no_Nordeste.jpg" alt="São João de Campina Grande">
+         </article>
+           <article>
             <h3>Artesanato</h3>
-            <p>Rico e variado, o artesanato nordestino traz redes, rendas, cerâmicas e esculturas que representam o talento e a cultura do povo da região.</p>
-            <img src="https://cdn.pixabay.com/photo/2016/11/19/17/22/crafts-1840030_1280.jpg" alt="Artesanato de Caruaru">
-        </article>
-
-        <article>
+            <p>O artesanato nordestino é rico e variado, com redes, rendas, cerâmicas e esculturas. Cada peça conta uma história e representa a cultura e o talento do povo da região.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Artesanato_de_Caruaru.jpg/800px-Artesanato_de_Caruaru.jpg" alt="Artesanato de Caruaru">
+          </article>
+          <article>
             <h3>Música e Dança</h3>
-            <p>O forró, o baião e o xaxado fazem parte da alma nordestina. Luiz Gonzaga, o “Rei do Baião”, eternizou o som e o sentimento do sertão.</p>
-            <img src="https://cdn.pixabay.com/photo/2016/04/13/20/53/luiz-gonzaga-1325376_1280.jpg" alt="Luiz Gonzaga, o Rei do Baião">
+            <p>O forró, o baião e o xaxado são ritmos que animam o Nordeste. Luiz Gonzaga, o “Rei do Baião”, eternizou a música sertaneja, levando a alma nordestina para todo o Brasil.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Luiz_Gonzaga.jpg/800px-Luiz_Gonzaga.jpg" alt="Luiz Gonzaga, o Rei do Baião">
         </article>
     </section>
-
-    <footer>
+       <footer>
         <p>© 2025 - Nordeste do Brasil | Feito com amor pela cultura nordestina 💛</p>
-    </footer>
-
+      </footer>
 </body>
 </html>
